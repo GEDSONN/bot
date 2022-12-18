@@ -1,6 +1,7 @@
 const { Client, Collection, GatewayIntentBits } = require("discord.js");
 
 const {readdirSync} = require("fs");
+const {token} = require('./config.json');
 
 const client = new Client({
 intents: [
@@ -14,8 +15,9 @@ intents: [
   ]
 });
 
-client.login(process.env.token);
+client.login(token);
 
 module.exports = client;
 require('./handler/slash.js')
 require('./handler/evento.js')
+//teste

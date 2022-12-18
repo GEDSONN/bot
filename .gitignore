@@ -1,5 +1,8 @@
 node_modules/
+
 package-lock.json
+
 .replit
-.replit.nix
-.config.json
+
+replit.nix
+config.json
